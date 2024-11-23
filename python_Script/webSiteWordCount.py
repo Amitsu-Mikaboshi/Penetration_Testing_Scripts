@@ -32,7 +32,7 @@ for word in all_words: # this function is responsible for filter out the unique 
 top_words = sorted(word_count.items(), key=lambda item: item[1], reverse=True) # this will sort out the word list depend on maximum used word
 
 for i in range(10): # this loop will run 10 times means it will print top 10 most used word
-    print(top_words[i]) # as top_words is a tuple , so it will print key along with its value. Means we will have the word along with its occurance
+    print(top_words[i]) # as top_words is a dictionary , so it will print key along with its value. Means we will have the word along with its occurance
 
 
 # this is the basic of web scraping. Beiginner may face some issue. Again this is my way of coding . So maybe it will not suit or may conflict with others 

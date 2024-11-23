@@ -53,8 +53,8 @@ def main(url, length):
     the_words = get_all_words_from(url)
     top_words = get_top_words_from(the_words, length)
 
-    for i in range(10):
-        print(top_words[i][0])
+    for i in range(len(top_words)): # change to 10, 5 will show you top 10 and top 5 of them respectively. Kintu ami ekhane sob word er jonno ber kortesi
+        print(top_words[i][0]) # remove the [0]. then it will show the occurance number along with it. In short, it will show dictionary
 
 if __name__ == '__main__': # Eita must be use korte hobe. kenona aita use nh korle main function kokhonoi call hobe nh and rest of the kaj unsolve thakbe
     main()
